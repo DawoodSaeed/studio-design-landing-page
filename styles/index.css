@@ -84,7 +84,7 @@ p {
   align-items: center;
   padding-left: 90px;
   /* gap: 20px; */
-  height: calc(100% - 70px);
+  height: fit-content;
 }
 
 .hero-section__left {
@@ -176,9 +176,9 @@ p {
 .services {
   display: flex;
   padding-left: 90px;
-  margin: 100px 0px;
+  margin: 40px 0px 20px 0px;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
   gap: 20px;
 }
 
@@ -482,6 +482,7 @@ p {
     flex-direction: column;
     padding: 30px 40px 0px 45px;
     margin-top: 80px;
+    margin-bottom: 30px;
     height: fit-content;
   }
 
