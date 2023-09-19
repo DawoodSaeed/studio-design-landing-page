@@ -236,7 +236,7 @@ a {
   width: 270px;
   text-align: center;
   padding: 45px 25px;
-  box-shadow: 0 10px 50px 0 #f4f9ff;
+  box-shadow: 0 10px 50px 0 #eee;
   border-radius: 20px;
   margin-top: 0px;
 }
@@ -329,6 +329,7 @@ a {
   .services .services__right .services__right--infobox {
     width: 45%;
     margin-top: 20px;
+    background-color: #f5efe6;
   }
   .services__right--infobox.mb-100 {
     margin-bottom: 0px;
