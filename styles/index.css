@@ -4,9 +4,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: averta;
+  src: url(../fonts/Averta.ttf);
+}
+
+@font-face {
+  font-family: proxima;
+  src: url(../fonts/proxima.otf);
+}
+
 :root {
-  --font-normal: "Averta Demo PE Cutted Demo";
-  --font-heading: "Proxima Nova";
+  --font-normal: averta;
+  --font-heading: proxima;
 }
 
 html,
@@ -319,7 +329,7 @@ a {
   .services .services__right .services__right--infobox {
     width: 45%;
     margin-top: 20px;
-    background-color: #dadada;
+    background-color: #ccc;
   }
   .services__right--infobox.mb-100 {
     margin-bottom: 0px;
