@@ -678,6 +678,11 @@ p {
   .newsletter-left .mb-hidden {
     display: none;
   }
+
+  .main-input-container {
+    box-shadow: 0 10px 50px 0 #fff;
+  }
+
   .main-input-container input {
     padding: 15px 10px;
   }
