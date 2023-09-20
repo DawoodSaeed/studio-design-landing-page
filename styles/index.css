@@ -450,6 +450,46 @@ p {
 
 /* ####################### footer ############# */
 
+.footer {
+  margin: 45px;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  border-top: 1px solid #dadada;
+  padding: 45px 0px;
+}
+
+.footer-left {
+  width: 30%;
+}
+
+.footer-left p:first-of-type {
+  font-weight: 600;
+}
+
+.footer-left p:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+.footer-right {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer h2 {
+  margin-bottom: 20px;
+}
+.footer-right ul {
+  list-style-type: none;
+}
+
+.footer-right li:not(:first-of-type) {
+  margin-top: 5px;
+}
+
 /* ########################## MOBILE AND TABLET DEVELOPMENT CODE #################### */
 
 /* Tablets and devices smaller then 1100px */
@@ -524,6 +564,20 @@ p {
 
   .services__right--bg {
     display: none;
+  }
+
+  /* For the footer */
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+
+  .footer-left p:not(:first-of-type) {
+    width: 50%;
   }
 }
 /*  for mobile devices */
@@ -690,5 +744,23 @@ p {
 
   .main-input-container .primary-btn {
     padding: 10px;
+  }
+
+  /* ############################ FOOTER ###################### */
+  .footer {
+    flex-direction: column;
+    margin: 45px 15px;
+  }
+  .footer-left {
+    width: 100%;
+  }
+
+  .footer-left p:not(:first-of-type) {
+    width: 100%;
+  }
+
+  .footer-right > div {
+    width: 45%;
+    margin-top: 20px;
   }
 }
