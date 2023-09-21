@@ -24,6 +24,13 @@ body {
   width: 100%;
   height: 100%;
   font-family: var(--font-normal);
+  /* background-color: #eee; */
+}
+
+main {
+  max-width: 1440px;
+  margin: auto;
+  /* background-color: white; */
 }
 
 h1,
@@ -164,7 +171,7 @@ p {
   align-items: center;
   flex-grow: 1;
   gap: 50px;
-  justify-content: flex-end;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -389,6 +396,10 @@ p {
   border-bottom-left-radius: 50px;
 }
 
+.newsletter-left {
+  width: 50%;
+}
+
 .newsletter-left h1 {
   font-size: 4vw;
 }
@@ -399,6 +410,7 @@ p {
 
 .newsletter-right {
   z-index: 2;
+  width: 100%;
 }
 .main-input-container {
   background-color: #fff;
@@ -409,12 +421,14 @@ p {
   box-shadow: 0 10px 50px 0 #4757e8;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .newsletter-right input {
   padding: 30px;
   border: none;
   font: inherit;
+  width: 90%;
 }
 
 .newsletter-right input:focus {
@@ -434,6 +448,9 @@ p {
   z-index: 1;
   overflow: hidden;
   font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .newsletter::before {
@@ -511,9 +528,9 @@ p {
   }
 
   .our-client .our-client__logos {
-    justify-content: flex-start;
     margin-top: 10px;
     width: 100%;
+    gap: 0px;
   }
 
   .services .services__right .services__right--infobox {
@@ -729,6 +746,9 @@ p {
     display: none;
   }
 
+  .newsletter-left {
+    width: 100%;
+  }
   .newsletter-left .mb-hidden {
     display: none;
   }
@@ -740,6 +760,7 @@ p {
 
   .main-input-container input {
     padding: 15px 10px;
+    width: 80%;
   }
 
   .main-input-container .primary-btn {
