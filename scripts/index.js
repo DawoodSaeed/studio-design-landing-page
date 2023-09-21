@@ -10,3 +10,12 @@ newsletterField.addEventListener("blur", () => {
   newsletterMainContainer.style.zIndex = "1";
   newsletterMainContainer.classList.remove("focused");
 });
+
+const mobileNav = document.querySelector(".mobile-nav");
+document.getElementById("mobile-menu").addEventListener("click", () => {
+  if (!mobileNav.classList.contains("mobile-nav-active")) {
+    mobileNav.classList.add("mobile-nav-active");
+  } else {
+    mobileNav.classList.remove("mobile-nav-active");
+  }
+});

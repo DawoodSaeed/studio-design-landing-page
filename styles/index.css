@@ -832,3 +832,60 @@ p {
     margin-top: 20px;
   }
 }
+/* Mobile navbar */
+.mobile-nav {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  background-color: #fff;
+  display: none;
+}
+
+.mobile-nav > p {
+  text-align: center;
+  padding: 20px;
+  animation: pAnimation 0.8s ease-in;
+  animation-delay: 0.6s;
+}
+
+@keyframes pAnimation {
+  0% {
+    transform: translateY(-4%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.mobile-nav > p:not(:last-of-type) {
+  /* border-bottom: 1px solid #bbbbbb; */
+}
+
+.mobile-nav a {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.mobile-nav-active {
+  z-index: 1000;
+  animation: mobile-nav-animation 0.3s ease-in;
+  width: 100%;
+  display: block;
+}
+
+@keyframes mobile-nav-animation {
+  0% {
+    width: 0%;
+  }
+
+  70% {
+    width: 50%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
