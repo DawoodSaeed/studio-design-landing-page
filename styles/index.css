@@ -59,7 +59,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 30px 20px 100px;
+  padding: 40px 30px 40px 100px;
   font-weight: 600;
   height: 70px;
 }
@@ -83,6 +83,29 @@ p {
   display: flex;
   align-items: center;
   gap: 80px;
+}
+
+.navbar__right a {
+  position: relative;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.navbar__right a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-image: linear-gradient(to right, #4757e8 60%, #2639ed);
+  bottom: -2px;
+  left: 0px;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.navbar__right p:hover > a::after {
+  opacity: 1;
+  width: 100%;
 }
 
 /* ####################### HERO ######################### */
@@ -249,6 +272,12 @@ p {
   box-shadow: 0 10px 50px 0 #eee;
   border-radius: 20px;
   margin-top: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.services__right .services__right--infobox:hover {
+  transform: translateY(-1%);
 }
 
 .services__right--infobox h3 {
@@ -422,13 +451,31 @@ p {
   display: flex;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
+.main-input-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #dae9ff;
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+  width: 0%;
+  transition: all 0.3s ease-in;
+}
+.main-input-container.focused::before {
+  width: 100%;
+}
 .newsletter-right input {
   padding: 30px;
   border: none;
   font: inherit;
   width: 90%;
+  z-index: 1;
+  background-color: transparent;
 }
 
 .newsletter-right input:focus {
